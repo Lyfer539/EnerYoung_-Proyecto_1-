@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergYoung</title>
+    <link rel="icon" href="../imagen/Logo.png" >
+    <link rel="stylesheet" href="../estilo/estiloformula.css">
+</head>
+
+<body>   
+    <div class="form-container">
+        <div id="formtitle">Personaliza tu experiencia:</div>
+        <form id="registerform" novalidate>
+            <div class="form-group">
+                <label for="name">Danos tu nombre:</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese nombre" required>
+                <small>Por favor ingresa tu nombre</small>
+            </div>
+            <div class="checkbox">
+                <label for="subs">¿Deseas suscribirte a la difusión de mensajería?</i> 
+                    <input type="checkbox" name="subs" id="subs">   
+                </label>
+            </div>
+            <div id="form-groupEmail" style="display: none;">
+                <label for="email">¿Cuál es tu correo electrónico?:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese email">
+                <small>Por favor ingresa tu email</small>
+            </div> 
+            <div class="bottombuttons">      
+                <div class="buttonContainer">
+                    <button type="button" id="cancelar">
+                        <a href="../vistas/pagemain.html">
+                            Cancelar
+                        </a>
+                    </button>
+                </div>
+                <div class="buttonContainer">
+                    <button type="submit" id="enviar">
+                        Enviar 
+                    </button>
+                </div> 
+                <div class="buttonContainer">
+                    <button type="button" id="continuar" style="display: none;">
+                        <a href="../vistas/pagemain.html">
+                            Continuar
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <p id="error-message" class="error-message"></p>
+    <p id="success-message" class="success-message"></p>
+    <script src="../javascript/form.js"></script>
+</body>
+</html>
