@@ -45,14 +45,36 @@ sectionNavContainer.addEventListener("mouseleave", hideSectionNavContainer);
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const tooltipTriggerCFos = document.getElementById("tooltipTriggerCFos");
-    const asideCFos = document.getElementById("asideCFos");
+    const tooltipTrigger = document.getElementById("tooltipTrigger");
+    const asideCfos = document.getElementById("asideCfos");
+    const asideGW = document.getElementById("asideGW");
 
-    tooltipTriggerCFos.addEventListener("mouseenter", function() {
-        asideCFos.style.display = "block";
+    tooltipTrigger.addEventListener("mouseenter", function() {
+        asideCfos.style.display = "block";
     });
 
-    tooltipTriggerCFos.addEventListener("mouseleave", function() {
-        asideCFos.style.display = "none";
+    tooltipTrigger.addEventListener("mouseleave", function() {
+        asideCfos.style.display = "none";
+    });
+
+    tooltipTrigger.addEventListener("mouseenter", function() {
+        asideGW.style.display = "block";
+    });
+
+    tooltipTrigger.addEventListener("mouseleave", function() {
+        asideGW.style.display = "none";
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const tooltipTrigger = document.getElementById("tooltipTrigger");
+    const asideGW = document.getElementById("asideGW");
+
+    tooltipTrigger.addEventListener("mouseenter", function() {
+        asideGW.style.display = "block";
+    });
+
+    tooltipTrigger.addEventListener("mouseleave", function() {
+        asideGW.style.display = "none";
     });
 });
