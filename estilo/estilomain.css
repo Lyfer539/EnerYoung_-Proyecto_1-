@@ -111,9 +111,9 @@ body {
 
 #innerNav a {
     width: 25%;
-    display: flex;                 
-    justify-content: center;
+    display: flex;    
     align-items: center;
+    justify-content: center;             
     color: aliceblue;
     font-weight: 600;
     font-size: 18px;
@@ -124,6 +124,9 @@ body {
 
 #innerNav a span {
     transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .lowerbutton {
@@ -239,7 +242,7 @@ body {
     flex-direction: column;
 }
 
-#section1 {
+.section {
     background-color: none;
     display: flex;
     flex-direction: column;
@@ -247,12 +250,23 @@ body {
     padding-top: 25px;
 }
 
+.ERSectionContent {
+    background-color: rgba(240, 248, 255, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+}
+
 .title {
     display: flex;
     width: 100%;
-    height: 120px;
+    height: auto;
+    padding: 20px 40px;
     justify-content: center;
-    align-items: center;
     text-align: center;
     font-size: 65px;
     font-family: monospace;
@@ -270,17 +284,6 @@ body {
     font-family: monospace;
     font-weight: 700;
     margin: 15px;
-}
-
-#whatiser {
-    background-color: rgba(240, 248, 255, 0.6);
-    backdrop-filter: blur(5px);
-    padding: 45px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-radius: 10px;
-    align-items: center;
 }
 
 .parr {
@@ -318,205 +321,252 @@ body {
     box-shadow: 2px 2px 3px black;
 }
 
-#Sec1MidPhr {
-    width: 90%;
-    height: 100px;
-    border-radius: 8px;
-    margin: 20px;
-    padding: 10px 15px;
-    background-color: #7C9D59ff;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
+/*From Uiverse.io by akshat-patel28 - Selfmodified*/  
 
-#Sec1MidPhrIcon_container {
-    width: 55px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-    border-radius: 50%;
-    margin-left: 8px;
-}
-#Sec1MidPhrIcon {
-    width: 25px;
-    height: 25px;
-    color: #7C9D59ff;
-}
-#Sec1MidPhrMesgContainer {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-#Sec1MidPhrMesg,
-#Sec1MidPhrSubMesg {
-    margin: 0;
-    cursor: default;
-}
-#Sec1MidPhrMesg {
-    color: #D5D5C9ff;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-#Sec1MidPhrSubMesg {
-    font-size: 20px;
-    font-weight: 650;
-    color: #1f221e;
-}
-
-#ERTypesCardcontainer {
-    display: flex;
-    justify-content: space-evenly;
-    width: 150%;
-    margin: 20px;
-}
-
-.ERTypesCard {
-    position: relative;
-    width: 30%;
-    height: 700px;
-    background-color: #D5D5C9ff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    perspective: 1000px;
-    box-shadow: 0 0 0 5px #AABA97ff;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.ERTypesCard:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-}
-
-.ERTypesCardContent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(213, 213, 201, 0.9);
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.ERTypesCard:hover .ERTypesCardContent {
-    transform: rotateX(0deg);
-    cursor: pointer;
-}
-
-.ERTypesCardTitle {
-    margin: 0;
-    font-size: 30px;
-    color: #333;
-    font-weight: 700;
-}
-
-.ERTypescardDescription {
-    margin-top: 10px;
-    font-size: 15px;
-    color: #000000;
-    line-height: 1.5;
-    text-align: justify;
-}
-
-
-
-
-
-@media (max-width: 1024px) {
-    #containerLogin {
-        width: auto;
+    #Sec1MidPhr {
+        width: 90%;
+        height: 100px;
+        border-radius: 8px;
+        margin: 20px;
+        padding: 10px 15px;
+        background-color: #7C9D59ff;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
 
-    #loginButton {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    #header {
-        flex-direction: column;
-        height: auto;
-    }
-
-    #NavLogo {
-        display: none;
-    }
-
-    #navContainer {
-        margin-top: 10px;
-        width: 100%;
-        height: auto;
-    }
-    
-    #lowerNav, #innerNav {
-        margin-top: 20px;
-        min-height: 50px;
-    }
-
-    #containerLogin {
-        width: 30%;
-    }
-    
-    #loginButton {
-        height: 50%;
-        font-size: 14px; 
-    }
-
-    #dynTitle {
-        width: 80%;
+    #Sec1MidPhrIcon_container {
+        width: 55px;
+        height: 55px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        border-radius: 50%;
+        margin-left: 8px;
+    }
+    #Sec1MidPhrIcon {
+        width: 25px;
+        height: 25px;
+        color: #7C9D59ff;
+    }
+    #Sec1MidPhrMesgContainer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 
-    .navItem {
-        font-size: 12px;
-        height: 50%;
+    #Sec1MidPhrMesg,
+    #Sec1MidPhrSubMesg {
+        margin: 0;
+        cursor: default;
+    }
+    #Sec1MidPhrMesg {
+        color: #D5D5C9ff;
+        font-size: 14px;
+        font-weight: 700;
     }
 
-    #titleContainer #dynTitle {
-        font-size: 50px; 
+    #Sec1MidPhrSubMesg {
+        font-size: 20px;
+        font-weight: 650;
+        color: #1f221e;
     }
+
+/*From Uiverse.io by gharsh11032000 - Selfmodified*/  
+    #ERTypesCardcontainer {
+        display: flex;
+        justify-content: space-evenly;
+        width: 150%;
+        margin: 20px;
+    }
+
+    .ERTypesCard {
+        position: relative;
+        width: 30%;
+        height: 700px;
+        background-color: #D5D5C9ff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        perspective: 1000px;
+        box-shadow: 0 0 0 5px #60814Aff;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .ERTypesCard:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    .ERTypesCardContent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(213, 213, 201, 0.9);
+        transform: rotateX(-90deg);
+        transform-origin: bottom;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .ERTypesCard:hover .ERTypesCardContent {
+        transform: rotateX(0deg);
+        cursor: pointer;
+    }
+
+    .ERTypesCardTitle {
+        margin: 0;
+        font-size: 30px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .ERTypescardDescription {
+        margin-top: 10px;
+        font-size: 15px;
+        color: #000000;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+#tooltipTriggerACR {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-@media (max-width: 480px) {
-       
-    #loginButton {
-        width: 90%;  
-        font-size: 12px;  
+#tooltipTriggerGW {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.tooltipTextACR {
+    display: block;
+    text-align: justify;
+    position: absolute;
+    font-size: 17px;    
+    line-height: 1.4;
+    background-color: rgb(207, 217, 233);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    width: 60%;
+    height: auto;
+    top: 370px;
+    right: 30%;
+    transform: translateX(10%);
+    z-index: 100;
+    box-shadow: 2px 2px 3px black;
+}
+
+.tooltipTextGW {
+    display: block;
+    text-align: justify;
+    position: absolute;
+    font-size: 17px;    
+    line-height: 1.4;
+    background-color: rgb(207, 217, 233);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    width: 60%;
+    height: auto;
+    top: 400px;
+    right: 10%;
+    transform: translateX(10%);
+    z-index: 100;
+    box-shadow: 2px 2px 3px black;
+}
+
+.Sec2ChallCards {
+    display: flex;
+    justify-content: space-between;
+    width: 140%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 25px;
+}
+ 
+/*From Uiverse.io by mRcOol7 - Selfmodified*/ 
+
+    .ChallgCard {
+        width: 140%;
+        height: 450px;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        cursor: pointer;
+        box-shadow: 0 0 0 3px #60814Aff;
+        border-radius: 10px;
+        background-color: none;
     }
     
-    #innerNav a {
-        font-size: 12px;  
-    }
-
-    #titleContainer #dynTitle {
-        font-size: 35px; 
-        text-align: center;
+    .ChallgCard:hover {
+        transform: rotateY(180deg) scale(1.07);
+        z-index: 100;
     }
     
-    #content {
-        width: 90%; 
+    .ChallgCardInner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        background-color: none;
+    }
+    
+    .ChallgCardFront,
+    .ChallgCardBack {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    .ChallgCardFront {
+        background-color: #D5D5C9ff;
+        transform: rotateY(0deg);
     }
 
-    .navItem {
-        font-size: 8px;
-        height: 50%;
+    .ChallgCardFront p {
+        font-size: 40px;
+        font-family: monospace;
+        font-weight: bolder;
+        transform: rotate(-90deg);
     }
+    
+    .ChallgCardBack {
+        background-color: #C3CB9Dff;
+        transform: rotateY(180deg);
+        padding: 25px;
+    }
+
+.parr1 {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
 }

@@ -45,14 +45,42 @@ sectionNavContainer.addEventListener("mouseleave", hideSectionNavContainer);
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const tooltipTrigger = document.getElementById("tooltipTriggerCfos");
+    const tooltipTriggerCfos = document.getElementById("tooltipTriggerCfos");
     const asideCfos = document.getElementById("asideCfos");
 
-    tooltipTrigger.addEventListener("mouseenter", function() {
+    asideCfos.style.display = "none";
+
+    tooltipTriggerCfos.addEventListener("mouseenter", function() {
         asideCfos.style.display = "block";
     });
 
-    tooltipTrigger.addEventListener("mouseleave", function() {
+    tooltipTriggerCfos.addEventListener("mouseleave", function() {
         asideCfos.style.display = "none";
+    });
+
+    const tooltipTriggerACR = document.getElementById("tooltipTriggerACR");
+    const asideACR = document.getElementById("asideACR");
+
+    asideACR.style.display = "none";
+
+    tooltipTriggerACR.addEventListener("mouseenter", function() {
+        asideACR.style.display = "block";
+    });
+
+    tooltipTriggerACR.addEventListener("mouseleave", function() {
+        asideACR.style.display = "none";
+    });
+
+    const tooltipTriggerGW = document.getElementById("tooltipTriggerGW");
+    const asideGW = document.getElementById("asideGW");
+
+    asideGW.style.display = "none";
+
+    tooltipTriggerGW.addEventListener("mouseenter", function() {
+        asideGW.style.display = "block";
+    });
+
+    tooltipTriggerGW.addEventListener("mouseleave", function() {
+        asideGW.style.display = "none";
     });
 });
