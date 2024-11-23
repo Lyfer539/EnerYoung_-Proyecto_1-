@@ -45,9 +45,8 @@ sectionNavContainer.addEventListener("mouseleave", hideSectionNavContainer);
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const tooltipTrigger = document.getElementById("tooltipTrigger");
+    const tooltipTrigger = document.getElementById("tooltipTriggerCfos");
     const asideCfos = document.getElementById("asideCfos");
-    const asideGW = document.getElementById("asideGW");
 
     tooltipTrigger.addEventListener("mouseenter", function() {
         asideCfos.style.display = "block";
@@ -55,26 +54,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     tooltipTrigger.addEventListener("mouseleave", function() {
         asideCfos.style.display = "none";
-    });
-
-    tooltipTrigger.addEventListener("mouseenter", function() {
-        asideGW.style.display = "block";
-    });
-
-    tooltipTrigger.addEventListener("mouseleave", function() {
-        asideGW.style.display = "none";
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const tooltipTrigger = document.getElementById("tooltipTrigger");
-    const asideGW = document.getElementById("asideGW");
-
-    tooltipTrigger.addEventListener("mouseenter", function() {
-        asideGW.style.display = "block";
-    });
-
-    tooltipTrigger.addEventListener("mouseleave", function() {
-        asideGW.style.display = "none";
     });
 });
