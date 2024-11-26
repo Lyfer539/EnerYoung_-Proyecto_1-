@@ -1,3 +1,5 @@
+// Dinamic tytle
+
 const storedFormData = localStorage.getItem("formData");
 const dynName = document.getElementById("dynTitle");
 
@@ -12,6 +14,8 @@ if (storedFormData) {
 } else {
     showName(dynName, "Hola. !Bienvenido¡");
 }
+
+// Hide/Show Section navigation
 
 const upContainerHeight = upContainer.offsetHeight;
 const sectionNavContainer = document.getElementById("sectionNavContainer");
@@ -43,6 +47,7 @@ sectionNavContainer.addEventListener("mouseenter", function () {
 
 sectionNavContainer.addEventListener("mouseleave", hideSectionNavContainer);
 
+// Show/Hide Tooltips
 
 document.addEventListener("DOMContentLoaded", function() {
     const tooltipTriggerCfos = document.getElementById("tooltipTriggerCfos");

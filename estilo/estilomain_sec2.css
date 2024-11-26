@@ -1,0 +1,153 @@
+#tooltipTriggerACR {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#tooltipTriggerGW {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.tooltipTextACR {
+    display: block;
+    text-align: justify;
+    position: absolute;
+    font-size: 17px;    
+    line-height: 1.4;
+    background-color: rgb(207, 217, 233);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    width: 60%;
+    height: auto;
+    top: 370px;
+    right: 30%;
+    transform: translateX(10%);
+    z-index: 100;
+    box-shadow: 2px 2px 3px black;
+}
+
+.tooltipTextGW {
+    display: block;
+    text-align: justify;
+    position: absolute;
+    font-size: 17px;    
+    line-height: 1.4;
+    background-color: rgb(207, 217, 233);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    width: 60%;
+    height: auto;
+    top: 400px;
+    right: 10%;
+    transform: translateX(10%);
+    z-index: 100;
+    box-shadow: 2px 2px 3px black;
+}
+
+.Sec2ChallCards {
+    display: flex;
+    justify-content: space-between;
+    width: 140%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 25px;
+}
+
+    .ChallgCard {
+        width: 140%;
+        height: 450px;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        cursor: pointer;
+        box-shadow: 0 0 0 3px #60814Aff;
+        border-radius: 10px;
+        background-color: none;
+    }
+    
+    .ChallgCard:hover {
+        transform: rotateY(180deg) scale(1.07);
+        z-index: 100;
+    }
+    
+    .ChallgCardInner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        background-color: none;
+    }
+    
+    .ChallgCardFront,
+    .ChallgCardBack {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    .ChallgCardFront {
+        background-color: #D5D5C9ff;
+        transform: rotateY(0deg);
+    }
+
+    .ChallgCardFront p {
+        font-size: 40px;
+        font-family: monospace;
+        font-weight: bolder;
+        transform: rotate(-90deg);
+    }
+    
+    .ChallgCardBack {
+        background-color: #C3CB9Dff;
+        transform: rotateY(180deg);
+        padding: 25px;
+    }
+
+.parr1 {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#tooltipTriggerG20 {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tooltipTextG20 {
+    display: block;
+    text-align: justify;
+    position: absolute;
+    font-size: 17px;    
+    line-height: 1.4;
+    background-color: rgb(207, 217, 233);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    width: 60%;
+    height: auto;
+    top: 1410px;
+    right: 40%;
+    transform: translateX(10%);
+    z-index: 100;
+    box-shadow: 2px 2px 3px black;
+}
