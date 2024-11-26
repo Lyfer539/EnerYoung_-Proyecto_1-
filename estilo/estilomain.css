@@ -321,8 +321,6 @@ body {
     box-shadow: 2px 2px 3px black;
 }
 
-/*From Uiverse.io by akshat-patel28 - Selfmodified*/  
-
     #Sec1MidPhr {
         width: 90%;
         height: 100px;
@@ -376,7 +374,6 @@ body {
         color: #1f221e;
     }
 
-/*From Uiverse.io by gharsh11032000 - Selfmodified*/  
     #ERTypesCardcontainer {
         display: flex;
         justify-content: space-evenly;
@@ -502,8 +499,6 @@ body {
     margin-bottom: 20px;
     gap: 25px;
 }
- 
-/*From Uiverse.io by mRcOol7 - Selfmodified*/ 
 
     .ChallgCard {
         width: 140%;
@@ -569,4 +564,30 @@ body {
     font-size: 16px;
     text-align: justify;
     line-height: 1.5;
+}
+
+#tooltipTriggerG20 {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tooltipTextG20 {
+    display: block;
+    text-align: justify;
+    position: absolute;
+    font-size: 17px;    
+    line-height: 1.4;
+    background-color: rgb(207, 217, 233);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    width: 60%;
+    height: auto;
+    top: 1410px;
+    right: 40%;
+    transform: translateX(10%);
+    z-index: 100;
+    box-shadow: 2px 2px 3px black;
 }

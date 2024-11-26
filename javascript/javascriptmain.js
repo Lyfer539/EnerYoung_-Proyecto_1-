@@ -83,4 +83,17 @@ document.addEventListener("DOMContentLoaded", function() {
     tooltipTriggerGW.addEventListener("mouseleave", function() {
         asideGW.style.display = "none";
     });
+
+    const tooltipTriggerG20 = document.getElementById("tooltipTriggerG20");
+    const asideG20 = document.getElementById("asideG20");
+
+    asideG20.style.display = "none";
+
+    tooltipTriggerG20.addEventListener("mouseenter", function() {
+        asideG20.style.display = "block";
+    });
+
+    tooltipTriggerG20.addEventListener("mouseleave", function() {
+        asideG20.style.display = "none";
+    });
 });
