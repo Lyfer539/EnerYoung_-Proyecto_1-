@@ -102,3 +102,22 @@ document.addEventListener("DOMContentLoaded", function() {
         asideG20.style.display = "none";
     });
 });
+
+// Menú retos seleccionable
+
+function openColChllgmenu(evt, chllgName) {
+    var i, x, ColChllgtablink;
+    x = document.getElementsByClassName("ColChllgmenu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    ColChllgtablink = document.getElementsByClassName("ColChllgtablink");
+    for (i = 0; i < x.length; i++) {
+        ColChllgtablink[i].className = ColChllgtablink[i].className.replace("", "");
+    }
+    document.getElementById(chllgName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += "";
+}
+
+document.getElementById("ColChllgLink").click();
+
