@@ -13,22 +13,82 @@ small {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('../imagen/headerimg.jpeg');
+    background-image: url('/imagen/backgroundForm.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
-.form-container {
+
+.container{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+#messagetitle{
     width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aliceblue;
+}
+
+#messagetitle h1{
+    width: 90%;
+    font-family: 'tahoma';
+    color: rgb(46, 59, 38);
+    font-size: 4em;
+    font-weight: 700;
+    text-align: justify;
+    padding: 2px 2px;
+    margin: 5px auto 2px; 
+    
+}
+
+#messagetitle h2{
+    width: 90%;
+    font-family: 'tahoma';
+    color: rgb(46, 59, 38);
+    font-size: 1.6em;
+    font-weight: 700;
+    text-align: justify;
+    padding: 2px 2px;
+    margin: 5px auto 2px;  
+}
+
+#messagetitle p{
+    width: 90%;
+    font-family: 'tahoma';
+    color: rgb(44, 54, 37);
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 2px 2px;
+    margin: 5px  auto 2px;  
+}
+
+.form-container {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    backdrop-filter: blur(10px); 
     border-radius: 10px;
-    padding: 10px 10px;
-    margin: 10px auto;
+    margin-right: 20px;
     box-shadow: 0px 4px 8px rgb(29, 28, 28);
+    padding: 10px 0;
 }
 
 #formtitle {
@@ -36,11 +96,9 @@ body {
     height: 40px;
     font-size: 28px;
     font-weight: 700;
-    text-align: center;
-    border: 2px solid #60814Aff;
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin: 10px auto;
+    color: #60814Aff;
+    text-align: left;
+    padding: 0px 20px;
 }
 
 .form-container form {
@@ -48,18 +106,18 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0px 12px;
+    padding: 0px 20px;
 }
 
 .form-group {
-    margin-top: 7px;
-    margin-bottom: 7px;
     width: calc(50% - 25px);
 }
 
 label {
+    text-align: left;
     display: block;
     font-weight: 100;
-    margin: 5px 5px;
+    margin: 5px 0px;
     font-style: italic;
 }
 
@@ -71,7 +129,6 @@ label {
     border: 1px solid;
     padding-left: 15px;
     border-bottom-width: 3px;
-    transition: all 0.3s ease;
 }
 
 .form-group input:valid {
@@ -168,7 +225,7 @@ label {
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    border: 2px solid #60814Aff;
+    border: 2px solid black;
     color: black;
     text-decoration: none;
     transition: background-color 0.5s ease, transform 0.3s ease;
@@ -220,16 +277,48 @@ a {
     box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.3);
 }
 
-@media (max-width: 800px) {
-    .form-container {
+.icon {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.icon ion-icon{
+    padding: 2px 2px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon h3{
+    padding: 2px 2px;
+    justify-content: center;
+    margin: 10px auto;
+    color: black
+       
+}
+
+@media (max-width: 973px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #messagetitle{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .form-container{
         width: 80%;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 585px){
+    #messagetitle h1 {
+        font-size: 40px;
+    }
+
     .form-container {
         width: 80%;
-        height: 76vh;
     }
 
     #formtitle {
@@ -245,4 +334,11 @@ a {
     .bottombuttons {
         display: block;
     }
+}
+
+@font-face {
+    font-family: 'protestrevolution';
+    src: url(/fuentes/ProtestRevolution-Regular.ttf);
+    font-weight: bold;
+    font-style: bold;
 }

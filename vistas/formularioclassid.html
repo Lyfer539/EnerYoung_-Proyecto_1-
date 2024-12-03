@@ -8,50 +8,74 @@
     <link rel="stylesheet" href="../estilo/estiloformula.css">
 </head>
 
-<body>   
-    <div class="form-container">
-        <div id="formtitle">Personaliza tu experiencia:</div>
-        <form id="registerform" novalidate>
-            <div class="form-group">
-                <label for="name">Danos tu nombre:</label>
-                <input type="text" name="name" id="name" placeholder="Ingrese nombre" required>
-                <small>Por favor ingresa tu nombre</small>
-            </div>
-            <div class="checkbox">
-                <label for="subs">¿Deseas suscribirte a la difusión de mensajería?</i> 
-                    <input type="checkbox" name="subs" id="subs">   
-                </label>
-            </div>
-            <div id="form-groupEmail" style="display: none;">
-                <label for="email">¿Cuál es tu correo electrónico?:</label>
-                <input type="email" name="email" id="email" placeholder="Ingrese email">
-                <small>Por favor ingresa tu email</small>
-            </div> 
-            <div class="bottombuttons">      
-                <div class="buttonContainer">
-                    <button type="button" id="cancelar">
-                        <a href="../vistas/pagemain.html">
-                            Cancelar
-                        </a>
-                    </button>
+<body>
+    <div class="container">     
+        <div id="messagetitle">
+            <h1>ENERGYOUNG</h1>
+            <h2>¡Bienvenido!</h2>
+            <p> 
+                Nos alegra que hayas llegado hasta aquí.
+                <br>
+                El cambio comienza ahora. Sumérgete en el mundo de las energías renovables y sé parte de la solución.
+            </p>
+        </div> 
+
+        <div class="form-container">
+            <div id="formtitle">Personaliza tu experiencia:</div>
+            <form id="registerform" novalidate>
+                <div class="form-group">
+                    <label for="name">Danos tu nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Ingrese nombre" required>
+                    <small>Por favor ingresa tu nombre</small>
                 </div>
-                <div class="buttonContainer">
-                    <button type="submit" id="enviar">
-                        Enviar 
-                    </button>
+                <div class="checkbox">
+                    <label for="subs">¿Deseas suscribirte a la difusión de mensajería?</i> 
+                        <input type="checkbox" name="subs" id="subs">   
+                    </label>
+                </div>
+                <div id="form-groupEmail" style="display: none;">
+                    <label for="email">¿Cuál es tu correo electrónico?:</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese email">
+                    <small>Por favor ingresa tu email</small>
                 </div> 
-                <div class="buttonContainer">
-                    <button type="button" id="continuar" style="display: none;">
-                        <a href="../vistas/pagemain.html">
-                            Continuar
-                        </a>
-                    </button>
+                <div class="bottombuttons">      
+                    <div class="buttonContainer">
+                        <button type="button" id="cancelar">
+                            <a href="../vistas/pagemain.html">
+                                Cancelar
+                            </a>
+                        </button>
+                    </div>
+                    <div class="buttonContainer">
+                        <button type="submit" id="enviar">
+                            Enviar 
+                        </button>
+                    </div> 
+                    <div class="buttonContainer">
+                        <button type="button" id="continuar" style="display: none;">
+                            <a href="../vistas/pagemain.html">
+                                Continuar
+                            </a>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
+
+        
     <p id="error-message" class="error-message"></p>
     <p id="success-message" class="success-message"></p>
+
+    <div class="icon">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <h3>¡Síguenos!</h3>
+    </div> 
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="../javascript/form.js"></script>
 </body>
 </html>
